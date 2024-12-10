@@ -68,15 +68,23 @@ body.lightStore h1 ion-icon{
   border-bottom: 3px solid rgba(64, 64, 250, 0.904);
  
 }
+h2{
+  margin-bottom: 15px;
+}
 h3{
   color: wheat;
   text-shadow: 2px 2px 4px darkblue;
   margin-bottom: 2px;
  
 }
-h2{
-  margin-bottom: 15px;
+.size-tag{
+  color: yellow;
+  text-shadow: 1px 1px 2px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
 }
+
+
 .nav-info{
 margin: 0% auto;
 align-items: center;
