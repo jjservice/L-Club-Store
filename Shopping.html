@@ -76,10 +76,22 @@
 </head>
 <body>
     <h1 onclick="toggleClassPlayer()">LOLLIP<ion-icon name="color-palette-outline"></ion-icon>P CLUB</h1>
+    
+
 
       <!-- Search Bar -->
       <input type="text" id="search-bar" placeholder=".;.LOLLITA CLUB.;." oninput="searchProducts()">
-      <button id="voice-search-btn" aria-label="Voice Search">🎙️</button>      
+      <button id="voice-search-btn" aria-label="Voice Search">🎙️</button>  
+      
+      <!-- Dropdown for language selection -->
+      <select id="language-select">
+        <option value="en-US">English (US)</option>
+         <option value="es-ES">Spanish</option>
+         <option value="fr-FR">French</option>
+         <option value="de-DE">German</option>
+         <option value="it-IT">Italian</option>
+       </select>
+
        
       <!-- Navigation Info -->
       <div class="nav-info">
@@ -401,18 +413,26 @@ function searchProducts() {
   }
 }
 
+
 // Voice search functionality
 const voiceSearchButton = document.getElementById('voice-search-btn');
 const searchBar = document.getElementById('search-bar');
+const languageSelect = document.getElementById('language-select');
 
 // Check if browser supports SpeechRecognition
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-recognition.lang = 'en-US'; // Set the language for speech recognition
+// Set the initial language (default to English)
+recognition.lang = languageSelect.value;
 
 // Initialize sound for notification
 let sound = new Audio('Cut-Voice-Notification-Sound.mp3'); // Path to your notification sound file
+
+// Listen for language change and update the language of recognition
+languageSelect.addEventListener('change', function() {
+  recognition.lang = languageSelect.value;
+});
 
 // Start voice recognition when the button is clicked
 voiceSearchButton.addEventListener('click', function() {
@@ -421,11 +441,11 @@ voiceSearchButton.addEventListener('click', function() {
   // Don't play sound immediately; will play once letters show up in the input
 });
 
-// Capture the result of the voice recognition
+
 recognition.onresult = function(event) {
   let transcript = event.results[0][0].transcript.toLowerCase();  // Get the speech-to-text result
 
-  // Remove period from the end of the transcript if exists
+ 
   if (transcript.endsWith('.')) {
     transcript = transcript.slice(0, -1);
   }
@@ -443,6 +463,7 @@ recognition.onresult = function(event) {
 recognition.onerror = function(event) {
   console.log("Error occurred in recognition: " + event.error);
 };
+
 
 ////To handle QT////
 
