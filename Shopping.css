@@ -209,7 +209,7 @@ transition: 0.5s;
 .product-List2{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-gap: 40px;
+gap: 20px;
 padding: 10px;
 }
 
@@ -1035,12 +1035,12 @@ padding: 5px;
   display: flex;
   justify-content: center; 
   align-items: center;
-  min-width: 600px;
+  min-width: 500px;
  
 }
 .blink-image {
-  min-width: 180px;
-  min-height: 180px;
+  min-width: 100px;
+  min-height: 100px;
   object-fit: cover;
   opacity: 0; /* Initially hide the images */
   animation: blink 10s infinite;
@@ -1059,12 +1059,9 @@ body.lightStore .image-container img{
 }
 .blink-image:nth-child(7) {
   display: none;
- 
- 
 }
 .blink-image:nth-child(8) {
   display: none;
- 
 }
 
 
