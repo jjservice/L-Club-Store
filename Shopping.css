@@ -896,6 +896,7 @@ body.lightStore .product{
   height: 0px;
   width: 0px;
 }
+
 @media (min-width: 768px) {
   .nav-info{
     position: absolute;
@@ -1029,7 +1030,89 @@ width: 100px;
 padding: 5px;
 }
 
-} 
+.image-container {
+  margin: 0% auto;
+  justify-content: center;  
+}
+.blink-image {
+  min-width: 150px;
+  min-height: 150px;
+  object-fit: cover;
+  opacity: 0; /* Initially hide the images */
+  animation: blink 10s infinite;
+}
+.image-container img{
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid lightskyblue;
+  box-shadow: 0px 2px 10px lightskyblue;
+  margin-inline: 15px;
+}
+body.lightStore .image-container img{
+  border: 1px solid yellowgreen;
+  box-shadow: 0px 2px 6px gold;
+}
+
+}
+.image-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  
+}
+.image-container img{
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid lightskyblue;
+  box-shadow: 0px 2px 5px lightskyblue;
+  margin-inline: 2px;
+}
+body.lightStore .image-container img{
+  border: 2px solid yellowgreen;
+  box-shadow: 0px 2px 5px rgba(255, 217, 0, 0.849);
+  transition: 1s;
+}
+.blink-image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  opacity: 0; /* Initially hide the images */
+  animation: blink 10s infinite;
+}
+
+.blink-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.blink-image:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.blink-image:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.blink-image:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.blink-image:nth-child(5) {
+  animation-delay: 8s;
+}
+.blink-image:nth-child(6) {
+  animation-delay: 10s;
+}
+
+@keyframes blink {
+  0%, 20%, 40%, 60%, 80%, 100% {
+      opacity: 0;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    opacity: 1;
+}
+       
+  } 
 .Buy-Now-Tag{
   margin: 0% auto;
   display: flex;
@@ -1086,6 +1169,10 @@ body.lightStore .Offer-Tag{
   box-shadow: 0px 2px 6px darkgreen;
   border-top: 2px solid yellowgreen;
 }
+
+
+
+
 
 
 
