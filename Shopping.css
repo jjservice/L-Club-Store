@@ -242,10 +242,14 @@ border-right: 4px solid red;
 border-left: 4px solid blue;
 border-top: 4px solid rgba(255, 217, 0, 0.808);
 border-bottom: 4px solid rgba(255, 217, 0, 0.808);
+box-shadow: 0px 2px 10px lightskyblue;
 border-radius: 20px;
 overflow: scroll;
 gap: 20px;
 padding: 10px;
+}
+body.lightStore .product-List{
+  box-shadow: 0px 2px 10px yellowgreen;
 }
 .product-List::-webkit-scrollbar{
 background: transparent;
