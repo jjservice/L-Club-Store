@@ -1032,33 +1032,49 @@ padding: 5px;
 
 .image-container {
   margin: 0% auto;
-  justify-content: center;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-width: 600px;
+ 
 }
 .blink-image {
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 180px;
+  min-height: 180px;
   object-fit: cover;
   opacity: 0; /* Initially hide the images */
   animation: blink 10s infinite;
 }
 .image-container img{
   padding: 10px;
-  border-radius: 15px;
   border: 1px solid lightskyblue;
+  border-radius: 20px;
   box-shadow: 0px 2px 10px lightskyblue;
   margin-inline: 15px;
+ 
 }
 body.lightStore .image-container img{
   border: 1px solid yellowgreen;
   box-shadow: 0px 2px 6px gold;
 }
+.blink-image:nth-child(7) {
+  display: none;
+ 
+ 
+}
+.blink-image:nth-child(8) {
+  display: none;
+ 
+}
+
 
 }
 .image-container {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   margin-bottom: 5px;
+  align-items: center;
+  text-align: center;
+  width: 370px;
   
 }
 .image-container img{
@@ -1102,6 +1118,13 @@ body.lightStore .image-container img{
 }
 .blink-image:nth-child(6) {
   animation-delay: 10s;
+}
+
+.blink-image:nth-child(7) {
+  animation-delay: 12s;
+}
+.blink-image:nth-child(8) {
+  animation-delay: 14s;
 }
 
 @keyframes blink {
