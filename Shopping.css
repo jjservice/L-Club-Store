@@ -1080,6 +1080,7 @@ body.lightStore .image-container img{
   border: 1px solid lightskyblue;
   box-shadow: 0px 2px 5px lightskyblue;
   margin-inline: 2px;
+  cursor: pointer;
 }
 body.lightStore .image-container img{
   border: 2px solid yellowgreen;
