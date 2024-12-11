@@ -626,7 +626,7 @@ body.lightStore h6 ion-icon{
   border: 1px solid rgba(255, 217, 0, 0.863);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(G-Shock-Digital-Black-Red-Shock--Watch-Pic7.avif);
+  background-image:url(razer6.jpg);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -646,7 +646,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image: url(V-Code-Lady-Watch-Pic2.avif);
+  background-image: url(MonkeyDesignGif.gif);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -665,7 +665,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.863);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(AccesoriesPic.png);
+  background-image:url(razerpic1.jpg);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -685,7 +685,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(ClothingFashionPic.jpg);
+  background-image:url(Razerpic2.jpg);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -705,7 +705,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.863);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(SHoesStorePic.jpg);
+  background-image:url(razer3.jpg);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -725,7 +725,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.849);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(SelectSneakersPic.jpg);
+  background-image:url(Razerpic5.webp);
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -745,7 +745,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(KitchenToolsPic.webp);
+  background-image:url(razer6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -765,7 +765,8 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(RealStatePic.jpg);
+  background-image: url(razerpic00.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -785,8 +786,9 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(GlassesPic.avif);
+  background-image:url(razerpic1.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -805,8 +807,9 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(WatchesLogoPic.webp);
+  background-image:url(razerpic00.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -825,7 +828,7 @@ body.lightStore h6 ion-icon{
   border: 2px solid rgba(255, 217, 0, 0.856);
   box-shadow: 0px 3px 10px black;
   border-radius: 10px;
-  background-image:url(MensFashionLogoPic.png);
+  background-image:url(razer6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
