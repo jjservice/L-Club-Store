@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOLLIPOP</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(to right, black, darkblue, lightgreen, maroon, black);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+        .contact-form button {
+            background-color: rgba(0, 0, 139, 0.911);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: blue;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.897);
+            color: wheat;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us - LOLLIPOP</h1>
+        <p>We’re here to help you with any questions or concerns.</p>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>If you have any questions, feedback, or need assistance, please don't hesitate to get in touch with us. You can reach us through the following ways:</p>
+        <ul>
+            <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+            <li><strong>Email:</strong> support@shopmaster.com</li>
+            <li><strong>Address:</strong> 123 E-Commerce St, Tech City, TX 75001</li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <p>If you prefer, you can also contact us by filling out the form below. We aim to respond to all inquiries within 24 hours.</p>
+        
+        <!-- Contact Form -->
+        <form id="contact-form" action="contact-form-handler.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Loading message -->
+        <div id="loading">Sending your message...</div>
+        <div id="success" style="color: green; display: none;">Your message has been sent successfully!</div>
+        <div id="error" style="color: red; display: none;">There was an error sending your message. Please try again.</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lollipop. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Show the loading message
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('success').style.display = 'none';
+            document.getElementById('error').style.display = 'none';
+
+            // Gather form data
+            var formData = new FormData(this);
+
+            // Make the AJAX request
+            fetch('contact-form-handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').style.display = 'none';
+                if (data.success) {
+                    document.getElementById('success').style.display = 'block';
+                } else {
+                    document.getElementById('error').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+</body>
+</html>
+

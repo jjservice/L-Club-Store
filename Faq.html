@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0;
+        }
+        .faq-item p {
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin: 0;
+            display: none;
+        }
+        .faq-item.active p {
+            display: block;
+        }
+        .faq-item h3:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>What is your return policy?</h3>
+            <p>We offer a 30-day return policy for all products. You can return items within 30 days of purchase for a full refund or exchange.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I track my order?</h3>
+            <p>Once your order has shipped, you will receive a tracking number via email. You can use this number to track your order on our website or through the carrier's tracking system.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you ship internationally?</h3>
+            <p>Yes, we offer international shipping to most countries. Shipping costs and delivery times vary depending on the destination.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I contact customer service?</h3>
+            <p>You can contact our customer service team through our contact page or by emailing support@ourcompany.com. We strive to respond within 24 hours.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept major credit cards, PayPal, and Apple Pay. Payments are securely processed through our website.</p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle FAQ answers
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.querySelector('h3').addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
