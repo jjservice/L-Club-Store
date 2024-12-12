@@ -160,11 +160,11 @@ position: relative;
 display: flex;
 right: 160px;
 height: 35px;
-bottom: 36px;
+bottom: 35px;
 border-radius: 10px;
 border: none;
 cursor: pointer;
-font-size: 24px;
+font-size: 23px;
 color: blue;
 text-shadow: 0px 2px 4px lightskyblue;
 }
