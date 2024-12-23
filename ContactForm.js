@@ -53,3 +53,11 @@
   const getElementVal = (id) => {
     return document.getElementById(id).value;
   };
+
+
+  ////Light Section/////
+
+  function toggleLight(){
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+  }
