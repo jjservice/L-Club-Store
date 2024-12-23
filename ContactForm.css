@@ -20,7 +20,7 @@ body.light{
 h1{
     color: wheat;
     text-shadow: 2px 2px 4px darkblue;
-    width: 360px;
+    width: 80%;
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0.404);
     border: 5px solid rgba(255, 255, 255, 0.164);
@@ -112,7 +112,7 @@ body.light h3{
 
 .inputBox input[type="text"], .inputBox input[type="email"]{
     margin: 0% auto;
-    width: 370px;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -135,7 +135,7 @@ textarea:focus{
 
   textarea{
     margin: 0% auto;
-    width: 370px;
+    width: 100%;
     border: 2px solid gold;
     padding: 10px;
     border-radius: 10px;
@@ -219,13 +219,15 @@ body.light .Home-btn{
 
 
 @media (min-width: 768px) {
-    .container-form{
-        min-width: 600px;
-    }
+ 
     h1{
-        min-width: 500px;
+        max-width: 500px;
     }
     textarea{
-        min-width: 600px;
+        max-width: 600px;
+        max-height: auto;
+    }
+    .inputBox input[type="text"], .inputBox input[type="email"]{
+        max-width: 400px;
     }
 }
