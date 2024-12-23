@@ -8,11 +8,74 @@ body{
     width: 100%;
     height: auto;
     text-align: center;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;   
+    padding: 10px; 
+    background: linear-gradient(to right, black,darkblue,maroon,black);
 }
-
+body.light{
+    background: linear-gradient(to right, black,darkblue,lightgreen,maroon,black);  
+}
+h1{
+    color: wheat;
+    text-shadow: 2px 2px 4px darkblue;
+    margin: 10px;
+    font-size: 30px;
+}
+body.light h1{
+    color: white;
+    text-shadow: 2px 2px 4px gold; 
+}
+h1 ion-icon{
+    color: rgba(255, 217, 0, 0.63);
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid wheat;
+    box-shadow: 0px 2px 2px darkblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+h2{
+    color: darkgrey;
+    text-shadow: 2px 2px 2px darkblue;
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 90%;
+}
+body.light h2{
+    opacity: 80%;
+    color: rgba(255, 217, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.623);
+   
+}
+h2 ion-icon{
+    color: rgba(245, 222, 179, 0.61);
+}
+body.light h2 ion-icon{
+    color: rgba(223, 191, 14, 0.664);
+    text-shadow: 2px 2px 2px darkblue;
+   
+}
+h3{
+    color: darkgray;
+    text-shadow: 2px 2px 2px darkblue;
+    opacity: 80%;
+    font-size: 14px;
+}
+h3 ion-icon{
+    color: rgba(255, 217, 0, 0.644);
+   
+}
+body.light h3{
+    opacity: 100%;
+}
 .container{
+    margin: 0% auto;
     width: 90%;
     height: 60vh;
     padding: 20px;
@@ -38,6 +101,7 @@ body{
     margin: 10px 0;
     border-radius: 5px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .inputBox input[type="text"], .inputBox input[type="email"]{
@@ -66,22 +130,32 @@ body{
     color: #444;
 }
 
-.inputBox button{
+button{
     width: 100%;    
-    padding: 10px 20px;
+    padding: 5px;
+    height: 50px;
     border: none;
-    outline: none;
-    background: rgb(0, 119, 255);
+    background: rgb(17, 17, 212);
     color: #FFF;
+    text-shadow: 0px 0px 2px gold;
+    border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+   
+    
+}
+body.light button:hover{
+    background: rgb(10, 180, 10);
     
 }
 
-.inputBox button:hover{
-    background: rgb(0, 17, 255);
+button:hover{
+    background: rgb(60, 60, 236);
     transition: all 0.3s ease;
+}
+body.light button{
+    background: darkgreen;
 }
 
 ::placeholder{

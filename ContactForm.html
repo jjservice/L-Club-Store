@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="ContactForm.css">
 </head>
 
-<body>
+<body class="light">
 
-    <h1>WHATERVER</h1>
+    
 
     <div class="container">
     
-        <h2>CONTACT US</h2>
+        <h2>CONTACT US<br><ion-icon name="send"></ion-icon></h2>
 
         <form action="" id="contactForm">
             <div class="alert">Your message sent</div>
@@ -32,13 +32,16 @@
                 <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
             </div>
 
-            <div class="inputBox">
-                <button type="submit">Submit</button>
-            </div>
+            <button type="submit">Submit</button>
         </form>
+
+        <h1>LOLLIP<ion-icon name="headset-sharp"  onclick="toggleLight()"></ion-icon>P</h1>
+        <h3>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></h3>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="ContactForm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
