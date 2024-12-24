@@ -25,8 +25,10 @@
     var name = getElementVal("name");
     var emailid = getElementVal("emailid");
     var msgContent = getElementVal("msgContent");
+    var phone = getElementVal("phone");
+
   
-    saveMessages(name, emailid, msgContent);
+    saveMessages(name, emailid, msgContent, phone);
   
     //   enable alert
     document.querySelector(".alert").style.display = "block";
@@ -40,13 +42,14 @@
     document.getElementById("contactForm").reset();
   }
   
-  const saveMessages = (name, emailid, msgContent) => {
+  const saveMessages = (name, emailid, msgContent, phone) => {
     var newContactForm = contactFormDB.push();
   
     newContactForm.set({
       name: name,
       emailid: emailid,
       msgContent: msgContent,
+      phone: phone,
     });
   };
   
