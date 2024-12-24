@@ -110,7 +110,7 @@ body.light h3{
     border-radius: 15px;
 }
 
-.inputBox input[type="text"], .inputBox input[type="email"]{
+.inputBox input{
     margin: 0% auto;
     width: 80%;
     padding: 10px;
@@ -227,7 +227,7 @@ body.light .Home-btn{
         max-width: 600px;
         max-height: auto;
     }
-    .inputBox input[type="text"], .inputBox input[type="email"]{
+    .inputBox input[type="text"], .inputBox input[type="email"], .inputBox input[type="tel"]{
         max-width: 400px;
     }
 }
