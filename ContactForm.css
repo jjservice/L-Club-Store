@@ -181,13 +181,16 @@ body.light button{
 }
 
 .alert{
-    width: 100%;
-    background: rgb(0, 255, 106);
+    width: 60%;
+    background: rgba(0, 255, 106, 0.815);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 100%;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px gold;
     font-size: 18px;
     font-weight: 900;
+    box-shadow: 0px 2px 8px black;
     display: none;
 }
 
