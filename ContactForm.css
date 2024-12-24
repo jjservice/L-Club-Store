@@ -230,4 +230,7 @@ body.light .Home-btn{
     .inputBox input[type="text"], .inputBox input[type="email"], .inputBox input[type="tel"]{
         max-width: 400px;
     }
+    #card{
+        max-width: 400px;
+    }
 }
