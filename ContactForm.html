@@ -23,19 +23,19 @@
             <div class="alert">Thank you for writing to us!</div>
 
             <div class="inputBox">
-                <input type="text" id="name" placeholder="Your name:" />
+                <input type="text" id="name" placeholder="Your name:" required />
             </div>
 
             <div class="inputBox">
-                <input type="email" id="emailid" placeholder="Email Address:" />
+                <input type="email" id="emailid" placeholder="Email Address:" required />
             </div>
 
             <div class="inputBox">
-                <input type="tel" id="phone" placeholder="Phone Number:" />
+                <input type="tel" id="phone" placeholder="Phone Number:" required />
             </div>
 
             <div class="inputBox">
-                <textarea id="msgContent" cols="30" rows="10" placeholder=".;.Message.;."></textarea>
+                <textarea id="msgContent" cols="30" rows="10" placeholder=".;.Message.;." required></textarea>
             </div>
 
            
@@ -45,7 +45,9 @@
         <h3>&copy;JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></h3>
     </div>
 
-     <a href="https://jjservice.github.io/L-Club-Store/Shopping.html" class="Home-btn">BACK</a>
+     <a href="javascript:history.back()" class="Home-btn">BACK</a>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="ContactForm.js"></script>
