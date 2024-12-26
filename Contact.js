@@ -1,20 +1,19 @@
 
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCBDffMAaJdgb1_Xsfa4zhoYLYAhxmrZVo",
-            authDomain: "contact-form-9868a.firebaseapp.com",
-            databaseURL: "https://contact-form-9868a-default-rtdb.firebaseio.com",
-            projectId: "contact-form-9868a",
-            storageBucket: "contact-form-9868a.firebasestorage.app",
-            messagingSenderId: "686565340119",
-            appId: "1:686565340119:web:8cbc0e2cfc7772af449192"
-          };
-
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyCBDffMAaJdgb1_Xsfa4zhoYLYAhxmrZVo",
+    authDomain: "contact-form-9868a.firebaseapp.com",
+    databaseURL: "https://contact-form-9868a-default-rtdb.firebaseio.com",
+    projectId: "contact-form-9868a",
+    storageBucket: "contact-form-9868a.firebasestorage.app",
+    messagingSenderId: "686565340119",
+    appId: "1:686565340119:web:8cbc0e2cfc7772af449192"
+  };
   
-  // initialize firebase
+  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-  // reference your database
+  // Reference your database
   var contactFormDB = firebase.database().ref("contactForm");
   
   document.getElementById("contactForm").addEventListener("submit", submitForm);
@@ -26,19 +25,23 @@
     var emailid = getElementVal("emailid");
     var msgContent = getElementVal("msgContent");
     var phone = getElementVal("phone");
-
   
     saveMessages(name, emailid, msgContent, phone);
   
-    //   enable alert
+    // Enable alert
     document.querySelector(".alert").style.display = "block";
   
-    //   remove the alert
+    // Remove the alert after 3 seconds
     setTimeout(() => {
       document.querySelector(".alert").style.display = "none";
     }, 3000);
   
-    //   reset the form
+    // Redirect to another page after the form submission
+    setTimeout(() => {
+      window.location.href = "https://chatgpt.com/";  // Replace with your desired URL
+    }, 3000); // Delay to allow alert to disappear before redirecting
+  
+    // Reset the form
     document.getElementById("contactForm").reset();
   }
   
@@ -56,5 +59,13 @@
   const getElementVal = (id) => {
     return document.getElementById(id).value;
   };
+  
 
 
+
+  ////Light Section/////
+
+  function toggleLight(){
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+  }
