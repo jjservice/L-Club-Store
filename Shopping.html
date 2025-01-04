@@ -71,6 +71,15 @@
     .prev:hover, .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
+    @media (min-width: 768px){
+    .modal-content{
+      padding-top: 60px;
+    }
+    .modal-content img {
+      width: 400px;
+      height: auto;
+    }
+    }
 
   </style>
 </head>
@@ -354,9 +363,20 @@
     <p id="in-Stock">In Stock: <span id="stock2">1</span></p> <!-- Example stock value -->
     <a href="https://buy.stripe.com/eVadTF4Pj5uh8NO3ci" class="Buy-Now-Tag">BUY NOW!</a>
   </div>
+  <br>
+ 
 
-  
-   
+  <footer>
+    <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+  </footer>
+
+  <script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    
+    // Find the element with id "currentYear" and set its content to the current year
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
 
 
   <!-- Add other products here similarly -->
